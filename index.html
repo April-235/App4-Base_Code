@@ -34,26 +34,26 @@ blah, blah, blah, blah
 
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
-	var allergyPercent = 0;
-	var coldPercent = 0;
+        var dog_count = 0;
+        var cat_count = 0;
+	var dogPercent = 0;
+	var catPercent = 0;
 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
-		alert(allergy_count);
+        function dogAdd(){
+            dog_count = dog_count + 1;
+		alert(dog_count);
 
         }
 
-        function coldAdd(){
-            cold_count = cold_count + 1;
+        function catAdd(){
+            cat_count = cat_count + 1;
         }
 	
 	function resultscalculator(){ 
-	var allergyPercent= allergy_count/6 * 100 
-	var coldPercent= cold_count/6 * 100
+	var dogPercent= dog_count/6 * 100 
+	var catPercent= cat_count/6 * 100
 	var ResultText = document.getElementById("Results");
-	ResultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
+	ResultText.innerHTML = "Probability it is allergies =" + dogPercent + "<br> Probability it is a cat =" + catPercent;
 	} 
 	
   </script>
@@ -84,11 +84,11 @@ blah, blah, blah, blah
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Cold or Allergies?</h1> <!-- this is the beginning heading also my main header for the very first page -->
+	<h1>Cat or Dog?</h1> <!-- this is the beginning heading also my main header for the very first page -->
 </div>
 	
 <div id="content" class="w3-container">
-	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
+	<p>Are you feeling like you might have a cat but wonder if it is allergies. Answer a few short questions to find out!</p>
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
 	
@@ -103,8 +103,9 @@ blah, blah, blah, blah
 	
     	<div id="content" class="w3-container">
         <p>Will you be away from home for many hours during the day?</p> <!-- 1st question -->
-		<a href="#two"  onclick="allergyAdd();" class="w3-button w3-black"> Yes</a> <!-- yes will add to allergy count & takes you to page #2 -->
-		<a href="#two"  onclick="coldAdd();" class="w3-button w3-black"> No</a> <!-- no will add to cold count & takes you to page #2 -->
+		<a href="#two"  onclick="dogAdd();" class="w3-button w3-black"> Yes</a> <!-- yes will add to dog
+count & takes you to page #2 -->
+		<a href="#two"  onclick="catAdd();" class="w3-button w3-black"> No</a> <!-- no will add to cat count & takes you to page #2 -->
 	 </div><!-- /content -->
 </div> <!-- end of page #1 -->
 
@@ -115,8 +116,8 @@ blah, blah, blah, blah
 	
 	<div id="content" class="w3-container">
 	<p>Would you like a pet that will grow big and tall (over 15 pounds)?</p> <!-- 2nd question -->
-		<a href="#three"  onclick="allergyAdd();" class="w3-button w3-black"> Yes</a> <!-- yes will add to cold count & takes you to page #3 -->
-		<a href="#three"  onclick="coldAdd();" class="w3-button w3-black"> No</a> <!-- no will add to allergy count & takes you to page #3 -->
+		<a href="#three"  onclick="dogAdd();" class="w3-button w3-black"> Yes</a> <!-- yes will add to cat count & takes you to page #3 -->
+		<a href="#three"  onclick="catAdd();" class="w3-button w3-black"> No</a> <!-- no will add to dog count & takes you to page #3 -->
 	 </div><!-- /content -->
 
 	</div> <!-- end of page #2 -->
@@ -129,8 +130,8 @@ blah, blah, blah, blah
 	
     	<div id="content" class="w3-container">
         <p>Do you live in an apartment or small living space?</p> <!-- 3rd question -->
-		 <a href="#four"    onclick="allergyAdd();" class="w3-button w3-black">  Yes</a> <!-- yes will add to cold count & takes you to page #4 -->
-		 <a href="#four"    onclick="coldAdd();" class="w3-button w3-black">  No</a> <!-- no will add to allergy count & takes you to page #4 -->
+		 <a href="#four"    onclick="dogAdd();" class="w3-button w3-black">  Yes</a> <!-- yes will add to cat count & takes you to page #4 -->
+		 <a href="#four"    onclick="catAdd();" class="w3-button w3-black">  No</a> <!-- no will add to dog count & takes you to page #4 -->
 	</div><!-- /content -->
 	
     	</div> <!-- end of page #3 -->
@@ -143,8 +144,8 @@ blah, blah, blah, blah
 	
 	<div id="content" class="w3-container">
 	<p>Would you like to teach your pet plenty of tricks?</p> <!-- 4th question -->
-		<a href="#five"    onclick="allergyAdd();" class="w3-button w3-black">  Yes</a> <!-- yes will add to allergy count & takes you to page #5 -->
-		<a href="#five"    onclick="coldAdd();" class="w3-button w3-black">  No</a> <!-- no will add to cold count & takes you to page #5 -->
+		<a href="#five"    onclick="dogAdd();" class="w3-button w3-black">  Yes</a> <!-- yes will add to dog count & takes you to page #5 -->
+		<a href="#five"    onclick="catAdd();" class="w3-button w3-black">  No</a> <!-- no will add to cat count & takes you to page #5 -->
 	</div><!-- /content -->
 	
 	</div> <!-- end of page #4 -->
@@ -157,8 +158,8 @@ blah, blah, blah, blah
 	
 	<div id="content" class="w3-container">
 	<p>Are you looking for a pet that can protect you?</p> <!-- 5th question -->
-		<a href="#six"    onclick="allergyAdd();" class="w3-button w3-black">  Yes</a> <!-- yes will add to allergy count & takes you to page #5 -->
-		<a href="#six"    onclick="coldAdd();" class="w3-button w3-black">  No</a> <!-- no will add to cold count & takes you to page #5 -->
+		<a href="#six"    onclick="dogAdd();" class="w3-button w3-black">  Yes</a> <!-- yes will add to dog count & takes you to page #5 -->
+		<a href="#six"    onclick="catAdd();" class="w3-button w3-black">  No</a> <!-- no will add to cat count & takes you to page #5 -->
 	</div><!-- /content -->
 	
 	</div> <!-- end of page #5 -->
@@ -171,8 +172,8 @@ blah, blah, blah, blah
 	
 	<div id="content" class="w3-container">
 	<p>Do you prefer staying indoors?</p> <!-- 6th question -->
-		<a href="#resultscontent"    onclick="allergyAdd();" class="w3-button w3-black">  Yes</a> <!-- yes will add to cold count & takes you to the resultscontent page -->
-		<a href="#resultscontent"    onclick="cooldAdd();" class="w3-button w3-black">  No</a> <!-- no will add to cold allergy & takes you to the resultscontent page -->
+		<a href="#resultscontent"    onclick="dogAdd();" class="w3-button w3-black">  Yes</a> <!-- yes will add to cat count & takes you to the resultscontent page -->
+		<a href="#resultscontent"    onclick="catAdd();" class="w3-button w3-black">  No</a> <!-- no will add to cat count & takes you to the resultscontent page -->
 	</div><!-- /content -->
 		
 	</div> <!-- end of page #6 -->
