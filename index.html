@@ -53,7 +53,7 @@ blah, blah, blah, blah
 	var dogPercent= dog_count/6 * 100 
 	var catPercent= cat_count/6 * 100
 	var ResultText = document.getElementById("Results");
-	ResultText.innerHTML = "Probability it is allergies =" + dogPercent + "<br> Probability it is a cat =" + catPercent;
+	ResultText.innerHTML = "Probability it is dog =" + dogPercent + "<br> Probability it is a cat =" + catPercent;
 	} 
 	
   </script>
@@ -103,9 +103,8 @@ blah, blah, blah, blah
 	
     	<div id="content" class="w3-container">
         <p>Will you be away from home for many hours during the day?</p> <!-- 1st question -->
-		<a href="#two"  onclick="dogAdd();" class="w3-button w3-black"> Yes</a> <!-- yes will add to dog
-count & takes you to page #2 -->
-		<a href="#two"  onclick="catAdd();" class="w3-button w3-black"> No</a> <!-- no will add to cat count & takes you to page #2 -->
+		<a href="#two"  onclick="dogAdd();" class="w3-button w3-black"> No</a> <!-- no will add to dog count & takes you to page #2 -->
+		<a href="#two"  onclick="catAdd();" class="w3-button w3-black"> Yes</a> <!-- yes will add to cat count & takes you to page #2 -->
 	 </div><!-- /content -->
 </div> <!-- end of page #1 -->
 
@@ -116,8 +115,8 @@ count & takes you to page #2 -->
 	
 	<div id="content" class="w3-container">
 	<p>Would you like a pet that will grow big and tall (over 15 pounds)?</p> <!-- 2nd question -->
-		<a href="#three"  onclick="dogAdd();" class="w3-button w3-black"> Yes</a> <!-- yes will add to cat count & takes you to page #3 -->
-		<a href="#three"  onclick="catAdd();" class="w3-button w3-black"> No</a> <!-- no will add to dog count & takes you to page #3 -->
+		<a href="#three"  onclick="dogAdd();" class="w3-button w3-black"> Yes</a> <!-- yes will add to dog count & takes you to page #3 -->
+		<a href="#three"  onclick="catAdd();" class="w3-button w3-black"> No</a> <!-- no will add to cat count & takes you to page #3 -->
 	 </div><!-- /content -->
 
 	</div> <!-- end of page #2 -->
@@ -130,8 +129,8 @@ count & takes you to page #2 -->
 	
     	<div id="content" class="w3-container">
         <p>Do you live in an apartment or small living space?</p> <!-- 3rd question -->
-		 <a href="#four"    onclick="dogAdd();" class="w3-button w3-black">  Yes</a> <!-- yes will add to cat count & takes you to page #4 -->
-		 <a href="#four"    onclick="catAdd();" class="w3-button w3-black">  No</a> <!-- no will add to dog count & takes you to page #4 -->
+		 <a href="#four"    onclick="dogAdd();" class="w3-button w3-black">  No</a> <!-- no will add to dog count & takes you to page #4 -->
+		 <a href="#four"    onclick="catAdd();" class="w3-button w3-black">  Yes</a> <!-- yes will add to cat count & takes you to page #4 -->
 	</div><!-- /content -->
 	
     	</div> <!-- end of page #3 -->
@@ -172,8 +171,8 @@ count & takes you to page #2 -->
 	
 	<div id="content" class="w3-container">
 	<p>Do you prefer staying indoors?</p> <!-- 6th question -->
-		<a href="#resultscontent"    onclick="dogAdd();" class="w3-button w3-black">  Yes</a> <!-- yes will add to cat count & takes you to the resultscontent page -->
-		<a href="#resultscontent"    onclick="catAdd();" class="w3-button w3-black">  No</a> <!-- no will add to cat count & takes you to the resultscontent page -->
+		<a href="#resultscontent"    onclick="dogAdd();" class="w3-button w3-black"> No </a> <!-- no will add to dog count & takes you to the resultscontent page -->
+		<a href="#resultscontent"    onclick="catAdd();" class="w3-button w3-black">  Yes</a> <!-- yes will add to cat count & takes you to the resultscontent page -->
 	</div><!-- /content -->
 		
 	</div> <!-- end of page #6 -->
